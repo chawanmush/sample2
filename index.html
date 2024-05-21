@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cafe sample</title>
+    <style type="text/css">
+        * {box-sizing: border-box;}
+        html {
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+        main {
+            margin: 90px auto 90px auto;
+            max-width: 100%;
+        }
+        .relat {
+            position: relative;
+            top: 40%;
+            left: 5%;
+            color: palevioletred;
+            font-size: 2em;
+            text-shadow: 0.05em 0.05em 0.05em;
+        }
+        .main_class .logo {
+            width: 50%;
+            height: 50%;
+        }
+        body {
+            color: #000;
+            margin: 0 0 0 0;
+        }
+        h1 {
+            margin: 6px 0 20px 0;
+            padding: 0 0 5px 0;
+            color: #000;
+            font-size: 1.3rem;
+        }
+        h2 {
+            margin: 6px 0 20px 0;
+            border-bottom: 2px solid #000;
+            padding: 0 0 5px 0;
+            color: #000;
+            font-size: 1.3rem;
+        }
+        img {
+            max-width: 100%;
+        }
+        .copyright {
+            margin-top: 100px;
+            margin-bottom: 0;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            background-color: rosybrown;
+            color: #fff;
+            text-align: center;
+        }
+        footer .top img {
+            width: 80px;
+            height: 80px;
+            right: 0;
+            position: absolute;
+        }
+        ul {
+            list-style: none;
+            margin: 30px 0 0 0 ;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        a {
+            text-decoration: none;
+        }
+        a:link {color: #000;}
+        a:visited {color: #000;}
+        a:hover {color: rosybrown;}
+        a:active {color: rosybrown;}
+        .home_index {
+            padding: 30px;
+            background-image: url(img/beans.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            color: #fff;
+        }
+        .shop_info {
+            border-collapse: collapse;
+        }
+        .shop_info th, .shop_info td {
+            padding: 10px;
+        }
+        .shop_info th {
+            width: 112px;
+            text-align: left;
+            vertical-align: middle;
+        }
+        @media screen and(max-width:600px) {
+            img {
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="access.html">access</a></li>
+                <li><a href="menu.html">menu</a></li>
+                <li><a href="contact.html">contact</a></li>
+                <li><a href="recruit.html">recruit</a></li>
+            </ul>
+        </nav>
+    </header>
+<h1 class="home_index">coffee house</h1>
+<main>
+    <p class="relat">we have food and drink</p>
+    <img src="img/背景用/food.jpg">
+</main>
+<footer>
+    <div>
+        <h2>店舗情報</h2>
+        <table class="shop_info">
+            <tr>
+                <th>住所</th>
+                <td>〒000-0000 aaa県aaa市aaa</td>
+            </tr>
+            <tr>
+                <th>電話番号</th>
+                <td>10:00 - 22:00</td>
+            </tr>
+            <tr>
+                <th>定休日</th>
+                <td>月曜日</td>
+            </tr>
+            <tr>
+                <th>ご予約</th>
+                <td>こちらから</td>
+            </tr>
+        </table>
+        <a class="top" href="#top"><img src="img/ロゴ/logotj.png"></a>
+        <p class="copyright">写真素材は以下よりお借りしております。<br>
+            ぱくたそ様　https://pakutaso.com<br><br>&copy;tojo</p>
+    </div>
+</footer>
+</body>
+</html>

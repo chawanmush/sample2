@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cafemenu sample</title>
+    <style type="text/css">
+        * {box-sizing: border-box;}
+        html {
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+        body {
+            color: #000;
+            margin: 0 0 0 0;
+        }
+        h1 {
+            margin: 6px 0 20px 0;
+            padding: 0 0 5px 0;
+            color: #000;
+            font-size: 1.3rem;
+        }
+        h2 {
+            margin: 6px 0 20px 0;
+            margin-top: 70px;
+            border-bottom: 2px solid #000;
+            padding: 0 0 5px 0;
+            color: #000;
+            font-size: 1.3rem;
+        }
+        .copyright {
+            margin-top: 105px;
+            margin-bottom: 0;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            background-color: rosybrown;
+            color: #fff;
+            text-align: center;
+        }
+        div {
+            margin-top: 60px;
+        }
+        .top img {
+            width: 80px;
+            height: 80px;
+            right: 0;
+            position: absolute;
+        }
+        header ul {
+            list-style: none;
+            margin: 30px 0 0 0 ;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        main .food img {
+            width: 40%;
+            height: 40%;
+            object-fit: cover;
+        }
+        a {
+            text-decoration: none;
+        }
+        a:link {color: #000;}
+        a:visited {color: #000;}
+        a:hover {color: rosybrown;}
+        a:active {color: rosybrown;}
+        .home_index {
+            padding: 30px;
+            background-image: url(img/beans.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            color: #fff;
+        }
+        main .title {
+            margin: 30px 0 20px 0;
+            border-bottom: 2px solid #000;
+            padding: 0 0 5px 0;
+            font-size: 1.5rem;
+        }
+        main .food img {
+            width: 450px;
+            height: 270px;
+            object-fit: cover;
+        }
+        .drink {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+        }
+        .drink img{
+            width: 450px;
+            height: 270px;
+            object-fit: cover;
+        }
+        .ice img {
+            object-position: left 0px bottom 25%;
+        }
+        .tea img {
+            object-position: left 0px bottom 30%;
+        }
+        .desert {
+                display: flex;
+                width: 100vw;
+                height: 330px;
+                overflow: hidden;
+            }
+        .desert ul {
+            width: auto;
+            height: 100%;
+            display: flex;
+            list-style-type: none;
+            gap: 20px;
+        }
+        .desert ul img {
+            width: 450px;
+            height: 270px;
+            object-fit: cover;
+        }
+        @keyframes loop1 {
+            from {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+        @keyframes loop2 {
+            0% {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-200%);
+            }
+        }
+        .desert ul:first-child {
+            animation: loop1 50s -25s linear infinite;
+        }
+        .desert ul:last-child {
+            animation: loop2 50s linear infinite;
+        }
+        .desert:hover ul {
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="access.html">access</a></li>
+                <li><a href="menu.html">menu</a></li>
+                <li><a href="contact.html">contact</a></li>
+                <li><a href="recruit.html">recruit</a></li>
+            </ul>
+        </nav>
+    </header>
+<h1 class="home_index">menu</h1>
+<main>
+    <h2 class="title">food</h2>
+    <div class="food">
+        <div>
+            <img src="img/food/ハンバーグ.jpg" alt="ハンバーグ">
+            <p>
+                ハンバーグ<br>
+                <strong>¥950-</strong>
+            </p>
+        </div>
+        <div>
+            <img src="img/food/ピザ①.jpg" alt="季節のピザ">
+            <p>
+                季節のピザ<br>
+                <strong>¥950-</strong>
+            </p>
+        </div>
+        <div>
+            <img src="img/food/ピザ②.jpg" alt="日替わりピザ">
+            <p>
+                日替わりピザ<br>
+                <strong>¥950-</strong>
+            </p>
+        </div>
+        <div>
+            <img src="img/food/サンドイッチ.jpg" alt="ハンバーグ">
+            <p>
+                サンドイッチ<br>
+                <strong>¥950-</strong>
+            </p>
+        </div>
+    </div>
+    <h2 class="drink">drink</h2>
+    <div class="drink">
+        <div>
+            <img src="img/drink/ホットコーヒー.jpg" alt="ホットコーヒー">
+            <p>
+                ホットコーヒー<br>
+                <strong>¥400-</strong>
+            </p>
+        </div>
+        <div class="ice">
+            <img src="img/drink/アイスコーヒー.jpg" alt="アイスコーヒー">
+            <p>
+                アイスコーヒー<br>
+                <strong>¥400-</strong>
+            </p>
+        </div>
+        <div>
+            <img src="img/drink/カフェラテ.jpg" alt="カフェラテ">
+            <p>
+                カフェラテ<br>
+                <strong>¥400-</strong>
+            </p>
+        </div>
+        <div class="tea">
+            <img src="img/drink/紅茶.jpg" alt="紅茶">
+            <p>
+                紅茶<br>
+                <strong>¥400-</strong>
+            </p>
+        </div>
+    </div>
+    <h2 class="title">desert</h2>
+    <div class="desert">
+        <ul>
+            <li>
+                <img src="img/food/イチゴケーキ.jpg">いちごケーキ　¥650-
+            </li>
+            <li>
+                <img src="img/food/チーズケーキ.jpg">チーズケーキ　¥650-
+            </li>
+            <li>
+                <img src="img/food/モンブラン.jpg">モンブラン　¥650-
+            </li>
+            <li>
+                <img src="img/food/ナッツケーキ.jpg">ナッツケーキ　¥650-
+            </li>
+            <li>
+                <img src="img/food/ベジケーキ.jpg">ベジケーキ　¥650-
+            </li>
+            <li>
+                <img src="img/food/ドーナツ.jpg">ドーナッツ　¥650-
+            </li>
+            <li>
+                <img src="img/food/マフィン.jpg" class="maff">マフィン　¥650-
+            </li>
+            <li>
+            </ul>
+            <ul>
+                <img src="img/food/イチゴケーキ.jpg">いちごケーキ　¥650-
+            </li>
+            <li>
+                <img src="img/food/チーズケーキ.jpg">チーズケーキ　¥650-
+            </li>
+            <li>
+                <img src="img/food/モンブラン.jpg">モンブラン　¥650-
+            </li>
+            <li>
+                <img src="img/food/ナッツケーキ.jpg">ナッツケーキ　¥650-
+            </li>
+            <li>
+                <img src="img/food/ベジケーキ.jpg">ベジケーキ　¥650-
+            </li>
+            <li>
+                <img src="img/food/ドーナツ.jpg">ドーナッツ　¥650-
+            </li>
+            <li>
+                <img src="img/food/マフィン.jpg" class="maff">マフィン　¥650-
+            </li>
+        </ul>
+    </div>
+</main>
+<a class="top" href="#top"><img src="img/ロゴ/logotj.png"></a>
+
+<footer>
+        <p class="copyright">写真素材は以下よりお借りしております。<br>
+        ぱくたそ様　https://pakutaso.com<br><br>&copy;tojo</p>
+    </div>
+</footer>
+</body>
+</html>

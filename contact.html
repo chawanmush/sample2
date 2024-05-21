@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact sample</title>
+    <style type="text/css">
+        * {box-sizing: border-box;}
+        html {
+            font-size: 16px;
+            font-family: sans-serif;
+        }
+        main {
+            margin: 90px auto 90px auto;
+            max-width: 100%;
+        }
+        .main_class .logo {
+            width: 50%;
+            height: 50%;
+        }
+        .home_index {
+            padding: 30px;
+            background-image: url(img/背景用/en.jpg);
+            background-repeat: no-repeat;
+            background-position: left 0 bottom 30%;
+            background-size: cover;
+            color: #000;
+        }
+        body {
+            color: #000;
+            margin: 0 0 0 0;
+        }
+
+        h1 {
+            margin: 6px 0 20px 0;
+            padding: 0 0 5px 0;
+            color: #000;
+            font-size: 1.3rem;
+        }
+        h2 {
+            margin: 6px 0 20px 0;
+            border-bottom: 2px solid #000;
+            padding: 0 0 5px 0;
+            color: #000;
+            font-size: 1.3rem;
+        }
+        img {
+            max-width: 100%;
+        }
+        .copyright {
+            margin-top: 180px;
+            margin-bottom: 0;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            background-color: rosybrown;
+            color: #fff;
+            text-align: center;
+        }
+        .top img {
+            width: 80px;
+            height: 80px;
+            right: 0;
+            position: absolute;
+        }
+        ul {
+            list-style: none;
+            margin: 30px 0 0 0 ;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        li {
+            font-size: 20px;
+        }
+
+        form {
+            margin: 0 20px auto;
+
+            max-width: 640px;
+        }
+        input[type="text"],textarea {
+            padding: 6px;
+            width: 70%;
+            font-size: 1rem;
+        }
+
+        textarea {
+            height: 140px;
+        }
+
+        input[type="submit"] {
+            border: none;
+            padding: 20px;
+            width: 200px;
+            background-color: #253958;
+            color: #fff;
+            font-size: 1rem;
+        }
+        a {
+            text-decoration: none;
+        }
+        a:link {color: #000;}
+        a:visited {color: #000;}
+        a:hover {color: rosybrown;}
+        a:active {color: rosybrown;}
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="access.html">access</a></li>
+                <li><a href="menu.html">menu</a></li>
+                <li><a href="contact.html">contact</a></li>
+                <li><a href="recruit.html">recruit</a></li>
+            </ul>
+        </nav>
+    </header>
+<h1 class="home_index">contact</h1>
+<main class="main_class">
+    <form action="@@@">
+        <p>
+            <label for="k1">お問い合わせ種類</label><br>
+            <select name="kind">
+                <option value="1">予約</option>
+                <option value="2">商品に関するお問い合わせ</option>
+                <option value="3">その他</option>
+            </select>
+        </p>
+        <p>初めての来店ですか？<br>
+                <option value="1"></option>
+                <option value="1"></option>
+                <label><input type="radio" name="first" id="yes" value="yes" checked>はい<br></label>
+                <label><input type="radio" name="first" id="no" value="no">いいえ<br></label>
+        </p>
+        <p>
+            来店目的<br>
+            <label><input type="checkbox" name="how" value="cafe">カフェ<br></label>
+            <label><input type="checkbox" name="how" value="lunch">ランチ<br></label>
+        </p>
+        <p>
+            <label for="subject">件名<br></label>
+            <input type="text" name="subject" placeholder="件名" id="subject">
+        </p>
+        <p>
+            <label for="message">内容<br></label>
+            <textarea name="message" id="message"></textarea>
+        </p>
+        <p class="submit">
+            <input type="submit" value="送信">
+        </p>
+    </form>
+</main>
+<a class="top" href="#top"><img src="img/ロゴ/logotj.png"></a>
+<footer>
+        <p class="copyright">写真素材は以下よりお借りしております。<br>
+            ぱくたそ様　https://pakutaso.com<br><br>&copy;tojo</p>
+    </div>
+</footer>
+</body>
+</html>
